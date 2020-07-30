@@ -74,9 +74,9 @@
   #else
     #define Y_MIN_PIN                       PE10  // E1
   #endif
-#else
-  #define Y_MIN_PIN                         PE12  // Y-
-  #define Y_MAX_PIN                         PE10  // E1
+#else //Roman 2020-07-29 flipped so I don't have to open the electronics enclosure and swap connectors (i know, right?)
+  #define Y_MIN_PIN                         PE10  // Y-
+  #define Y_MAX_PIN                         PE12  // E1
 #endif
 
 #ifdef Z_STALL_SENSITIVITY
@@ -301,8 +301,8 @@
 
     #define LCD_PINS_RS                     PD10
 
-    #define BTN_EN1                         PG10
-    #define BTN_EN2                         PF11
+    #define BTN_EN1                         PF11 //was PG10
+    #define BTN_EN2                         PG10 //was PF11
     #define SD_DETECT_PIN                   PF12
 
     #define LCD_SDSS                        PB12
